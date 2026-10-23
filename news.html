@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Updates | Ajay Satya Prakash Public School</title>
+  <meta name="description" content="Stay updated with the latest news, events, notices, and happenings at Ajay Satya Prakash Public School (ASPPS), Panagar, Jabalpur.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#1e3a8a">
+  <link rel="canonical" href="https://www.ajaysatyaprakashschool.in/news.html">
+  <link rel="icon" href="images/logoo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logoo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ajay Satya Prakash Public School">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://www.ajaysatyaprakashschool.in/news.html">
+  <meta property="og:title" content="News & Updates | Ajay Satya Prakash Public School">
+  <meta property="og:description" content="Latest announcements, events, and school happenings from ASPPS Panagar, Jabalpur.">
+  <meta property="og:image" content="https://www.ajaysatyaprakashschool.in/images/aspps_one.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Merriweather:wght@700;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.min.css">
+  <style>
+    .page-header {
+      padding: 6rem 1.25rem 3rem;
+      text-align: center;
+      background: radial-gradient(circle at top, rgba(76, 201, 240, 0.12), transparent 60%);
+    }
+    .page-header p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+    .breadcrumb { font-size: 0.9rem; margin-bottom: 1rem; color: var(--muted); }
+    .breadcrumb a { color: inherit; text-decoration: underline; }
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+    .news-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: 1.35rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(76, 201, 240, 0.4);
+    }
+    .news-card__img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+    }
+    .news-card__content {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .news-card__date {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 0.5rem;
+    }
+    .news-card__content h3 {
+      font-size: 1.2rem;
+      margin: 0 0 0.75rem;
+      color: var(--text);
+      font-family: "Merriweather", Georgia, serif;
+    }
+    .news-card__content p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0 0 1.25rem;
+      flex-grow: 1;
+    }
+    .social-banner {
+      background: linear-gradient(135deg, rgba(15, 29, 52, 0.8), rgba(8, 16, 29, 0.95));
+      border: 1px solid var(--line);
+      border-radius: 2rem;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 4rem auto;
+      box-shadow: var(--shadow);
+    }
+    .social-banner h2 {
+      font-family: "Merriweather", Georgia, serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 1rem;
+    }
+    .social-banner p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+    .social-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 720px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.ajaysatyaprakashschool.in/news.html#webpage",
+        "url": "https://www.ajaysatyaprakashschool.in/news.html",
+        "name": "News & Updates | Ajay Satya Prakash Public School",
+        "inLanguage": "en-IN",
+        "isPartOf": { "@id": "https://www.ajaysatyaprakashschool.in/#website" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Ajay Satya Prakash Public School home">
+        <img src="images/logoo.png" alt="Ajay Satya Prakash Public School logo" class="brand__logo">
+        <span class="brand__text">
+          <strong>ASPPS</strong>
+          <small>Learning with purpose</small>
+        </span>
+      </a>
+      <a class="btn btn--ghost" href="/" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Back to Home</a>
+    </nav>
+  </header>
+
+  <main id="news-updates">
+    <section class="page-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> &rsaquo; <span aria-current="page">News & Updates</span>
+      </nav>
+      <div class="eyebrow">Stay Informed</div>
+      <h1 class="hero__title" style="font-size: clamp(2.2rem, 5vw, 3.5rem); margin: 1rem auto; max-width: 22ch; color: var(--text);">
+        School News, Events & Happenings
+      </h1>
+      <p>
+        Catch up on all the latest activities, academic milestones, sports achievements, and announcements straight from Ajay Satya Prakash Public School, Panagar, Jabalpur.
+      </p>
+    </section>
+
+    <!-- Latest News Feed Grid -->
+    <section class="section">
+      <div class="section__heading">
+        <span class="section__eyebrow">Latest Updates</span>
+        <h2>Recent Happenings at ASPPS</h2>
+      </div>
+
+      <div class="news-grid">
+        <!-- Item 1: JSSC Inter School Hindi Speech Competition (Replacing Exam Hall) -->
+        <article class="news-card">
+          <a href="https://www.instagram.com/reel/DeRmVYVhmJs/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener">
+            <img src="images/jsccc.jpg" alt="JSSC Inter School Hindi Speech Competition" class="news-card__img">
+          </a>
+          <div class="news-card__content">
+            <span class="news-card__date">2 Weeks Ago</span>
+            <h3>JSSC Inter School Hindi Speech Competition</h3>
+            <p>🎤✨ Words That Inspire, Voices That Lead! 🏆 Glimpses of the JSSC Inter-School Hindi Speech Competition, where young minds showcased their confidence, communication skills, and love for the Hindi language. 🇮🇳📚 Celebrating the power of words and the voices of tomorrow! 🌟</p>
+            <a class="btn btn--ghost" href="https://www.instagram.com/reel/DeRmVYVhmJs/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.85rem; align-self: flex-start;">Watch Here</a>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="news-card">
+          <a href="https://www.facebook.com/watch/?v=1796746738167433" target="_blank" rel="noopener"><img src="images/teachers.jpg" alt="Teacher's Day Celebration" class="news-card__img"></a>
+          <div class="news-card__content">
+            <span class="news-card__date">September 2026</span>
+            <h3>Teacher’s Day Celebration</h3>
+            <p>A day filled with joy, laughter, cultural programs, and immense gratitude dedicated to our inspiring educators who guide our little starts.</p>
+            <a class="btn btn--ghost" href="https://www.facebook.com/watch/?v=1796746738167433" target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.85rem; align-self: flex-start;">Watch Here</a>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="news-card">
+          <img src="images/handball.jpg" alt="Division-Level Netball Tournament" class="news-card__img" style="object-fit: contain; background: rgba(0,0,0,0.2); padding: 1rem;">
+          <div class="news-card__content">
+            <span class="news-card__date">September 2026</span>
+            <h3>Division-Level Netball Tournament 🏆</h3>
+            <p>ASPPS athletes showed incredible sportsmanship, stamina, and team spirit at the Division-Level Netball Tournament, making the school proud.</p>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="news-card">
+          <a href="https://www.facebook.com/watch/?v=1393112482701889" target="_blank" rel="noopener"><img src="images/chesss.jpg" alt="Inter House Chess Competition" class="news-card__img"></a>
+          <div class="news-card__content">
+            <span class="news-card__date">August 2026</span>
+            <h3>Inter-House Chess Competition 2026-27</h3>
+            <p>Strategy, sharp focus, and intense tactical battles took center stage as young masterminds competed in the annual Inter-House Chess Championship.</p>
+            <a class="btn btn--ghost" href="https://www.facebook.com/watch/?v=1393112482701889" target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.85rem; align-self: flex-start;">Watch Here</a>
+          </div>
+        </article>
+
+        <!-- Item 5 -->
+        <article class="news-card">
+          <img src="images/as.png" alt="Orientation Program" class="news-card__img">
+          <div class="news-card__content">
+            <span class="news-card__date">February / New Session</span>
+            <h3>New Academic Session Orientation</h3>
+            <p>Welcoming new parents and students with open arms where learning meets joy. Introducing our comprehensive curriculum and holistic campus environment.</p>
+            <a class="btn btn--primary" href="/#contact" style="padding: 0.5rem 1rem; font-size: 0.85rem; align-self: flex-start;">Admission Inquiry</a>
+          </div>
+        </article>
+
+        <!-- Item 6 -->
+        <article class="news-card">
+          <img src="images/eleven.jpg" alt="Admissions Open 2026-27" class="news-card__img">
+          <div class="news-card__content">
+            <span class="news-card__date">Announcement</span>
+            <h3>Admissions Open For 2026–27 Session</h3>
+            <p>Admissions are now open for Preschool & Nursery through Higher Secondary (Class XII). Secure your child's bright future in a safe, nurturing environment.</p>
+            <a class="btn btn--primary" href="/#contact" style="padding: 0.5rem 1rem; font-size: 0.85rem; align-self: flex-start;">Apply Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Social Media Feed Integration Banner -->
+<!-- Social Media Feed Integration Banner -->
+    <section class="section">
+      <div class="social-banner">
+        <h2>Connect With Us on Social Media</h2>
+        <p>Never miss a moment! Follow our official Facebook and Instagram channels for daily photo galleries, event reels, student achievements, and live school updates.</p>
+        <div class="social-btns">
+          <a class="btn btn--primary" href="https://www.facebook.com/ajaysatyaprakashpublicschool" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f"></i> Follow on Facebook
+          </a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/ajay_satyaprakash_school/?hl=en" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Follow on Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Ajay Satya Prakash Public School</strong>
+      <address style="font-style:normal">
+        <p>Panagar, Keolari, Jabalpur, Madhya Pradesh 483220</p>
+        <p>
+          <a href="tel:+919691142224" style="color:inherit">+91 96911 42224</a> |
+          <a href="mailto:aspps011@gmail.com" style="color:inherit">aspps011@gmail.com</a>
+        </p>
+      </address>
+      <nav aria-label="Footer links">
+        <p>
+          <a href="/" style="color:inherit">Home</a> |
+          <a href="news.html" style="color:inherit">News & Updates</a> |
+          <a href="campus-info.html" style="color:inherit">About School</a> |
+          <a href="documentary.html" style="color:inherit">School Documentary</a>
+        </p>
+      </nav>
+    </div>
+    <p>&copy; 2026 Ajay Satya Prakash Public School Jabalpur, Madhya Pradesh. All rights reserved.</p>
+  </footer>
+
+  <link rel="stylesheet" href="assets/chatbot/chatbot.css">
+  <div id="aspps-ai"></div>
+  <script src="assets/chatbot/chatbot.js"></script>
+</body>
+</html>
